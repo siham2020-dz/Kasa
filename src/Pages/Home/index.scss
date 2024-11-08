@@ -1,0 +1,57 @@
+.home {
+    width: 100%;
+    // Max width permet d'avoir une largeur maximum de 1240px
+    // Si le site est plus petit, le max-width ne sert plus a rien
+    // Ca evite de définir une width fix ce qui ne casse pas le responsive
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    &__list {
+        background: #F6F6F6;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 50px;
+        gap: 50px;
+        margin: 50px 0;
+        border-radius: 25px;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            padding: 0;
+            background: white;
+        }
+
+        &-item {
+            border-radius: 25px;
+            position: relative;
+
+            img {
+                width: 100%;
+                display: block;
+                border-radius: 25px;
+                height: 340px;
+                object-fit: cover;
+            }
+
+            &-absolute {
+                position: absolute;
+                inset: 0;
+                border-radius: 25px;
+                background: linear-gradient(180deg, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.50) 100%);
+                padding: 20px;
+                display: flex;
+                align-items: flex-end;
+
+                h2 {
+                    margin: 0;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

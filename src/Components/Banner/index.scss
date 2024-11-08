@@ -1,0 +1,45 @@
+.banner {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+
+    img {
+        height: 220px;
+        width: 100%;
+        border-radius: 25px;
+        object-fit: cover;
+        display: block;
+
+        @media screen and (max-width: 768px) {
+            height: 110px;
+        }
+    }
+
+    div {
+        position: absolute;
+        // Inset remplace le top: 0, left: 0, right: 0, bottom: 0
+        inset: 0;
+        background-color: rgba(#000000, 0.3);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            padding: 0 20px;
+            justify-content: start;
+        }
+
+        h1 {
+            color: white;
+            font-size: 48px;
+            font-weight: 500;
+
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                width: 64%;
+            }
+        }
+    }
+}

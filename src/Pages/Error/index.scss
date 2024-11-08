@@ -1,0 +1,47 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        color: #FF6060;
+        font-size: 288px;
+        font-style: normal;
+        font-weight: 700;
+
+        @media screen and (max-width: 768px) {
+            font-size: 96px;
+        }
+    }
+
+    h2 {
+        color: #FF6060;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    h1,
+    h2,
+    a {
+        margin-bottom: 140px;
+        text-align: center;
+    }
+
+    a {
+        color: #FF6060;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        text-decoration-line: underline;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+}
